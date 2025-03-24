@@ -6,7 +6,7 @@ export function Navbar() {
     const navigation = useNavigation();
 
     return (
-        <View> 
+        <View className="flex-row flex-1 justify-between"> 
             <Button title="Home" onPress={() => navigation.navigate('Home')}>Home</Button>
             <Button title="Profile" onPress={() => navigation.navigate('Profile')}>Profile</Button>
             <Button title="Shop" onPress={() => navigation.navigate('Shop')}>Shop</Button>

@@ -8,6 +8,7 @@ import ShopScreen from './pages/shop/Shop';
 import SettingsScreen from './pages/settings/Settings';
 import GuildScreen from './pages/guild/Guild';
 import RankingScreen from './pages/ranking/Ranking';
+import ModeScreen from './pages/mode/Mode';
 
 const Stack = createNativeStackNavigator();
 
@@ -15,6 +16,7 @@ function RootStack() {
   return (
     <Stack.Navigator initialRouteName='Home'>
       <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen name="Mode" component={ModeScreen} />
       <Stack.Screen name="Profile" component={ProfileScreen} />
       <Stack.Screen name="Shop" component={ShopScreen} />
       <Stack.Screen name="Settings" component={SettingsScreen} />
